@@ -38,7 +38,7 @@ background-size: cover;
 .navigation-form-container form{
   margin: 0 auto;
   padding-bottom: 3%;
-  width:40%;
+  width:600px;
 
 }
 .navigation-form-container input{
@@ -53,11 +53,13 @@ background-size: cover;
 }
 
 .start{
-  margin-left: 10%;
+  border: 1px solid red;
+  margin-left: 17%;
 }
 
 .end{
   margin-left: 4%;
+  border: 1px solid red;
 }
 
 .welcome{
@@ -71,6 +73,7 @@ background-size: cover;
 .submit{
   border-radius: 2px;
   background-color: #00cd96;
+  display:inline-block;
   vertical-align: middle;
   color:white;
   font-size: 1em;
@@ -189,6 +192,7 @@ html{
   height:40px;
   display: block;
   margin:auto;
+  margin-right:5%;
   border-radius: 2px;
   border:none;
   margin-top:4%;
