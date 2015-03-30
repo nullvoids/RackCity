@@ -135,6 +135,10 @@ visibility: hidden;
 
 html{
   background-image: url(http://i.imgur.com/0GWg0Lv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+  width: 100%;
 }
 
 .title-container{
