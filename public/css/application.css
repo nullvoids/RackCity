@@ -2,7 +2,7 @@ video#bgvid {
 position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -100;
-background: url(polina.jpg) no-repeat;
+background: url(#) no-repeat;
 background-size: cover;
 }
 
@@ -116,16 +116,22 @@ background-size: cover;
 }
 
 
+
+
+
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
-
-
-
 *{
   font-family: sans-serif;
 }
+
+video#bgvid {
+visibility: hidden;
+}
+
 
 html{
   background-image: url(http://i.imgur.com/0GWg0Lv.jpg);
