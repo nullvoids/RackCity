@@ -174,7 +174,7 @@ html{
 }
 .navigation-form-container input{
   height:40px;
-  display: block;
+  display: inline-block;
   border-radius: 2px;
   border:none;
   margin-top:4%;
