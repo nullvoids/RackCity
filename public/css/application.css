@@ -169,11 +169,10 @@ html{
 
 
 .navigation-form-container{
-  /*background-color: rgba(256,256,256,0.3);*/
   height:40%;
   width:40%;
   display: block;
-  border-radius: 5px;
+  background-color: transparent;
   margin:auto;
 }
 
@@ -186,6 +185,7 @@ html{
 .navigation-form-container input{
   height:40px;
   display: block;
+  margin:auto;
   border-radius: 2px;
   border:none;
   margin-top:4%;
