@@ -39,8 +39,10 @@ background-size: cover;
   border-radius: 5px;
 }
 .navigation-form-container form{
-  margin-left: 35%;
+  margin: 0 auto;
   padding-bottom: 3%;
+  width:40%;
+
 }
 .navigation-form-container input{
   height:40px;
@@ -49,10 +51,18 @@ background-size: cover;
   border:none;
   margin-top:4%;
   font-size: 1em;
-  margin-right: 3%;
 
 
 }
+
+.start{
+  margin-left: 8%;
+}
+
+.end{
+  margin-left: 4%;
+}
+
 .welcome{
   color:white;
   position:relative;
@@ -164,13 +174,16 @@ html{
 .navigation-form-container{
   /*background-color: rgba(256,256,256,0.3);*/
   background-color: rgba(0,0,0,0.6);
-  margin-top: 20%;
+  margin-top: 80%;
   height:15%;
   border-radius: 5px;
 }
+
 .navigation-form-container form{
-  margin-left: 35%;
+  margin: 0 auto;
   padding-bottom: 3%;
+  width:40%;
+
 }
 .navigation-form-container input{
   height:40px;
@@ -179,9 +192,16 @@ html{
   border:none;
   margin-top:4%;
   font-size: 1em;
-  margin-right: 3%;
 
 
+}
+
+.start{
+  margin-left: 8%;
+}
+
+.end{
+  margin-left: 4%;
 }
 .welcome{
   color:white;
