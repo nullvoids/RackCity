@@ -40,6 +40,7 @@ background-size: cover;
 }
 .navigation-form-container form{
   margin-left: 35%;
+  padding-bottom: 3%;
 }
 .navigation-form-container input{
   height:40px;
