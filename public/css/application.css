@@ -36,30 +36,28 @@ background-size: cover;
   border-radius: 5px;
 }
 .navigation-form-container form{
-  margin: 0 auto;
-  padding-bottom: 3%;
-  width:600px;
+  padding: 1%;
 
 }
 .navigation-form-container input{
   height:40px;
+  width:200px;
   display: inline-block;
-  border-radius: 2px;
+  font-size: .7em;
+
+
+}
+
+#start{
+-webkit-border-top-left-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
   border:none;
-  margin-top:4%;
-  font-size: 1em;
-
-
+  border-right: 2px solid gray;
 }
 
-.start{
-  border: 1px solid red;
-  margin-left: 17%;
-}
+#end{
+  border: none;
 
-.end{
-  margin-left: 4%;
-  border: 1px solid red;
 }
 
 .welcome{
@@ -73,14 +71,13 @@ background-size: cover;
 .submit{
   border-radius: 2px;
   background-color: #00cd96;
-  display:inline-block;
   vertical-align: middle;
-  color:white;
+  color: white;
   font-size: 1em;
-  border:none;
-  padding:10px;
-  margin-left: 5%;
+  border: none;
+  padding: 10px;
 }
+
 
 .submit:hover{
   background-color: #00a478;
@@ -125,6 +122,15 @@ background-size: cover;
   background-color: rgba(0,0,0,0.5);
 }
 
+
+.form-div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width:40%;
+  margin:auto;
+}
 
 
 

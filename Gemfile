@@ -15,7 +15,7 @@ gem 'rake'
 
 gem 'shotgun'
 
-
+gem 'httparty'
 gem 'dotenv'
 
 group :test do
