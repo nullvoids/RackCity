@@ -1,19 +1,13 @@
 
 <!DOCTYPE html>
-<!-- https://data.sfgov.org/resource/w969-5mn4.json?$where=within_circle(latitude,37.78346622,-122.42177834,1) -->
+
 <html>
 <head>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <title>Travel modes in directions</title>
-  <style>
-  html, body, #map-canvas {
-    height: 80%;
-    width: 70%;
-    margin: 0 auto;
-    padding: 0px
-  }
-  </style>
+  <link rel="stylesheet" href="/css/map.css">
+  <div class="header-div"><img src="bike.png"></img><h3 class="rack-header">rackcity</h3></div>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
   <script>
   var directionsDisplay;
@@ -21,11 +15,11 @@
   var map;
 // var DBC = new google.maps.LatLng(37.784848, -122.397203);
 // var Home = new google.maps.LatLng(37.787182, -122.416171);
-  Number.prototype.toRadians = function() {
-   return this * Math.PI / 180;
- }
+Number.prototype.toRadians = function() {
+ return this * Math.PI / 180;
+}
 
- function distance(lat1,lon1,lat2,lon2){
+function distance(lat1,lon1,lat2,lon2){
 
   var R = 6371000; // meters (Earth's Radius)
   var φ1 = lat1.toRadians();
@@ -76,7 +70,11 @@ function calcRoute() {
     }
   }
   var end_rack = new google.maps.LatLng(parseFloat(nearest_bikes[idx_rack].latitude.latitude),parseFloat(nearest_bikes[idx_rack].latitude.longitude));
-  debugger
+
+  $("#location").text("Location: "+nearest_bikes[idx_rack].yr_inst);
+  $("#racks").text("Num Racks: "+nearest_bikes[idx_rack].racks);
+  $("#spaces").text("Spaces: "+nearest_bikes[idx_rack].spaces);
+  $("#year").text("Year built: "+nearest_bikes[idx_rack].yr_installed);
   var request = {
     origin: start_point,
     destination: end_rack,
@@ -91,15 +89,21 @@ function calcRoute() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
-
-
 </head>
 <body>
+  <h1>The Route to Your Rack</h1>
   <div id="data" class='hidden start-end'><%= @start_end%></div>
   <div id="data" class='hidden data'><%= @data.to_json%></div>
   <div id="data" class='hidden coordinates'><%= @coordinates%></div>
-  <h1>The Route to Your Rack</h1>
   <div id="map-canvas"></div>
+  <div class="ul">
+  <ul id="info">
+    <li id="location"></li>
+    <li id="racks"></li>
+    <li id="spaces"></li>
+    <li id="year"></li>
+  </ul>
+  </div>
 </body>
 </html>
 
