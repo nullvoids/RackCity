@@ -35,7 +35,7 @@
     }
 
     function calcRoute() {
-      var $JSONelement= JSON.parse($(".hidden").text());
+      var $JSONelement= JSON.parse($(".start-end").text());
       var start_point = $JSONelement.starting;
       var end_point = $JSONelement.ending;
       var request = {
@@ -56,7 +56,8 @@
 
   </head>
   <body>
-    <div id="data" class='hidden'><%= @start_end%></div>
+    <div id="data" class='hidden start-end'><%= @start_end%></div>
+    <div id="data" class='hidden data'><%= @data%></div>
     <div id="map-canvas"></div>
   </body>
 </html>
