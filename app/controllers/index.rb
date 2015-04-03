@@ -40,7 +40,7 @@ post '/signup' do
   new_user = User.new(params[:user])
   new_user.password = params[:user][:password]
   if new_user.save
-    session[:user_id] = User.where(email: params[:user][:email]).first.id
+    session[:user_id] = new_user.id
     redirect '/'
   else
     status 400
