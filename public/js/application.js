@@ -5,6 +5,11 @@ $(document).ready(function() {
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
+  $(".login").click(function(){
+    $("#loginmodal").modal()
+  });
 
-
+  $(".signup").click(function(){
+    $("#signupmodal").modal()
+  });
 });

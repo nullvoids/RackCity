@@ -48,7 +48,9 @@ var autocomplete2, autocomplete;
   <div class="signup account">Signup</div>
 </div>
 </div>
+<div id="loginmodal" class="modal hidden"> <button class="simplemodal-close">X</button><div class="inputs"><form action="/login" method="post"><input type="text" name="user[username]" placeholder="Username"><input name="user[password]" type="password" placeholder="Password"><input class="log-submit" type="submit" value="login"></form></div></div>
 
+<div id="signupmodal" class="su-modal hidden"> <button class="simplemodal-close">X</button><div class="inputs"><form action="/signup" method="post"><input type="email" name="user[email]" placeholder="Email"><input type="text" name="user[username]" placeholder="Username"><input type="password" name="user[password]" placeholder="Password"><a href="#"><input class="log-submit" type="submit" value="signup"></a></form></div></div>
 
 <div class="welcome">
 <h1>BIKE SAFELY</h1>

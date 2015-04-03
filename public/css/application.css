@@ -7,6 +7,19 @@ background-size: cover;
 }
 
 
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 15px #0C95F0;
+}
+
+.simplemodal-close{
+  border:none;
+  background-color: rgba(0,0,0,0.5);
+  color:gray;
+  float:right;
+}
+
 *{
   font-family: sans-serif;
 }
@@ -47,6 +60,75 @@ background-size: cover;
 
 
 }
+.modal{
+  color:black !important;
+
+}
+
+.modal input{
+  height: 40px;
+  display: block;
+  width: 41%;
+  border-radius: 5px;
+  border:none;
+  margin: 5% auto;
+}
+
+.su-modal{
+  color:black !important;
+
+}
+
+.su-modal input{
+  height: 40px;
+  display: block;
+  width: 41%;
+  border-radius: 5px;
+  border:none;
+  margin: 5% auto;
+}
+.su-modal .inputs{
+  margin-top: 6%;
+}
+
+.modal .inputs{
+  margin-top: 13%;
+}
+.log-submit{
+  background-color: coral;
+  border: none;
+  color: white;
+  /* font-weight: bold; */
+  font-size: 1.3em;
+}
+a{
+  text-decoration: none;
+}
+.log-submit:hover{
+  background-color: #ff6c37;
+
+}
+.simplemodal-overlay{
+  background-color: #00cd96;
+
+}
+
+.simplemodal-container{
+  background-color: rgba(0,0,0,0.4) !important;
+  border: none !important;
+  padding:0 !important;
+  border-radius: 4px;
+}
+/*.simplemodal-wrap{
+
+}
+.simplemodal-data{
+
+
+}
+*/
+
+
 .hidden{
   display:none;
 }
@@ -113,12 +195,12 @@ background-size: cover;
   padding: 5px;
   display: inline-block;
   border:1px solid white;
-  border-radius: 2px;
+  border-radius: 3px;
 
 }
 .signup{
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 3px;
   display: inline-block;
   border:1px solid white;
 }
@@ -244,7 +326,7 @@ html{
   background-color: rgba(256,256,256,0.3);
   border:1px solid white;
   color:white;
-  border-radius: 2px;
+  border-radius: 4px;
 
 }
 .how-button:hover{

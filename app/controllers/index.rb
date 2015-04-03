@@ -31,3 +31,25 @@ end
 post '/input' do
   params.inspect
 end
+
+
+post '/login' do
+end
+
+post '/signup' do
+  new_user = User.new(params[:user])
+  new_user.password = params[:user][:password]
+  if new_user.save
+    session[:user_id] = User.where(email: params[:user][:email]).first.id
+    redirect '/'
+  else
+    status 400
+    "Bad Request. Your email might be taken or your password is invalid."
+  end
+end
+
+
+get '/logout' do
+  session[:user_id] = nil
+  redirect '/'
+end
